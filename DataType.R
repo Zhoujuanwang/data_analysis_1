@@ -43,6 +43,10 @@ m <- matrix(1:12, ncol = 3, nrow = 4)
 colnames(m) <- c("L1", "L2", "L3")
 row.names(m) <- c("R1", "R2", "R3", "R4")
 m
+# 或者直接用dimnames()函数，名称是一个列表，前面的表示行的名字，后面的为列的名字
+m <- matrix(1:12, ncol = 3, nrow = 4)
+dimnames(m) <- list(c("R1", "R2", "R3", "R4"), c("L1", "L2", "L3"))
+m
 
 # factors 因子变量，做线性模型时常用
 # 普通因子
